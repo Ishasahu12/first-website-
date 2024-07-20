@@ -1,0 +1,157 @@
+:root {
+  --dark-color: #18135b;
+  --pink-color: #ee6f57;
+  --light-color: #f1faee;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+}
+
+.wrapper {
+  width: 1212px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 44px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 29px;
+}
+
+nav ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  color: var(--pink-color);
+}
+
+a.btn {
+  border-radius: 8px;
+  padding: 8px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 200ms;
+}
+
+a.btn.light {
+  border: 1px solid var(--dark-color);
+}
+
+a.btn.light:hover {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
+a.btn.dark {
+  background: var(--dark-color);
+  color: var(--light-color);
+  padding: 16px 32px;
+  display: inline-block;
+  border: 1px solid var(--dark-color);
+}
+
+a.btn.dark:hover {
+  background: var(--light-color);
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+}
+
+/* Hero Section */
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 97px);
+  position: relative;
+}
+
+.hero-wrapper .hero-text h1 {
+  font-family: "Oleo Script", cursive;
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 100%;
+  color: var(--dark-color);
+}
+
+.hero-wrapper .hero-text p.subheading {
+  font-size: 16px;
+  line-height: 200%;
+  width: 480px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.hero-wrapper .hero-image {
+  flex: 0.8;
+  position: relative;
+}
+
+.hero-wrapper .hero-text {
+  flex: 1;
+}
+
+/* social icons */
+
+.social-icons {
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+}
+
+.social-icons a {
+  margin: 0 18px;
+  text-decoration: none;
+  transition: all 200ms;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* BG Shapes */
+
+.hero-bg-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -200;
+}
+
+.hero-bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -200;
+}
+
+.hero-bg-left img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+/* Animation */
